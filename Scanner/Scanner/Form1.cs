@@ -2,6 +2,7 @@
 using System.Windows.Forms;
 using System.IO;
 using System.Text.RegularExpressions;
+using System.Drawing;
 
 namespace Scanner
 {
@@ -20,7 +21,7 @@ namespace Scanner
         public int NoOfLexemeInclude = 1;
         public int NoOfErrors = 0;
         public string match = "";
-
+        
         private void button2_Click(object sender, EventArgs e)
         {
             OpenFileDialog openFile = new OpenFileDialog();
@@ -34,6 +35,7 @@ namespace Scanner
                     sr.Close();
                 }
             }
+            else return;
             var lexer = new Lexer(code);
 
             while (true)
@@ -63,6 +65,7 @@ namespace Scanner
                 table.Rows.Add(LineNumber, token.Text, token.Kind, NoOfLexeme++, match);
             }
             noerrors.Text += NoOfErrors;
+            
         }
 
         private void richTextBox1_TextChanged(object sender, EventArgs e)
@@ -72,6 +75,9 @@ namespace Scanner
 
         private void button1_Click(object sender, EventArgs e)
         {
+            resetInformations(false);
+
+
             code = richTextBox1.Text;
             var lexer = new Lexer(code);
             while (true)
@@ -90,12 +96,15 @@ namespace Scanner
 
                 if (token.Kind == SyntaxKind.EndOfFileToken) break;
 
-
-
+                
                 if (token.Kind == SyntaxKind.BadToken)
                 {
                     NoOfErrors++;
                     match = "Not Matched";
+                    richTextBox1.SelectionStart = token.Position;
+                    richTextBox1.SelectionLength = 1;
+                    richTextBox1.SelectionColor = Color.Red;
+                    richTextBox1.SelectionBackColor = Color.Yellow;
                 }
                 else match = "Matched";
 
@@ -107,7 +116,6 @@ namespace Scanner
 
         private void includeFiles(string filePath)
         {
-            Regex.Replace(filePath, @"\s+", "");
             string FilePath = @"G:\CS\Level 3\Second Semester\Compiler\Project\Project\" + filePath;
 
             // If the file doesn't exist
@@ -115,7 +123,6 @@ namespace Scanner
             {
                 label1.Text += $"{filePath} doesn't exist";
                 NoOfErrors++;
-                match = "Not Matched";
                 return;
             }
             
@@ -167,7 +174,13 @@ namespace Scanner
 
         private void clearButton_Click(object sender, EventArgs e)
         {
-            richTextBox1.Text = "";
+            resetInformations(true);
+        }
+        public void resetInformations(bool removeTextFromEditor)
+        {
+            if (removeTextFromEditor)
+                richTextBox1.Text = "";
+            
             table.Rows.Clear();
 
             LineNumber = 1;
@@ -177,6 +190,39 @@ namespace Scanner
             NoOfLexemeInclude = 1;
             NoOfErrors = 0;
             noerrors.Text = "Total NO Of Errors: ";
+            label1.Text = "";
+        }
+        private void saveCodeButton_Click(object sender, EventArgs e)
+        {
+            if (richTextBox1.Text == "") 
+            {
+                messageBoxShow("You should write in the editor to be able to save", "Editor is empty", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            if (code == null)
+            {
+                messageBoxShow("You should Compile the code first", "Compilation Required", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            if(NoOfErrors > 0)
+            {
+                messageBoxShow("Remove the errors to be able to save the code", "Erorrs in Code", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            SaveFileDialog saveFile = new SaveFileDialog();
+            saveFile.RestoreDirectory = true;
+            saveFile.InitialDirectory = @"G:\CS\Level 3\Second Semester\Compiler\Project\Project";
+            //saveFile.FileName = String.Format("{0}.txt", code);
+            saveFile.DefaultExt = "*.txt*";
+            if(saveFile.ShowDialog() == DialogResult.OK)
+            {
+                using (System.IO.StreamWriter sw = new System.IO.StreamWriter(saveFile.FileName))
+                    sw.WriteLine(code);
+            }
+        }
+        private void messageBoxShow(string text, string title, MessageBoxButtons messageBoxButtons, MessageBoxIcon messageIcon)
+        {
+            MessageBox.Show(text, title, messageBoxButtons, messageIcon);
         }
     }
 

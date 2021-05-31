@@ -63,11 +63,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "G:\\CS\\Level 3\\Second Semester\\Compiler Project\\Project\\Scanner\\Scanner\\Scanner.csproj",
+      "projectUniqueName": "G:\\CS\\Level 3\\Second Semester\\Compiler\\Project\\Project\\Scanner\\Scanner\\Scanner.csproj",
       "projectName": "Scanner",
-      "projectPath": "G:\\CS\\Level 3\\Second Semester\\Compiler Project\\Project\\Scanner\\Scanner\\Scanner.csproj",
+      "projectPath": "G:\\CS\\Level 3\\Second Semester\\Compiler\\Project\\Project\\Scanner\\Scanner\\Scanner.csproj",
       "packagesPath": "C:\\Users\\mosta\\.nuget\\packages\\",
-      "outputPath": "G:\\CS\\Level 3\\Second Semester\\Compiler Project\\Project\\Scanner\\Scanner\\obj\\",
+      "outputPath": "G:\\CS\\Level 3\\Second Semester\\Compiler\\Project\\Project\\Scanner\\Scanner\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\mosta\\AppData\\Roaming\\NuGet\\NuGet.Config",

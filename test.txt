@@ -1,6 +1,4 @@
-/@ Include hello.txt
-Mostafa is the best 
-HAHAHA @/
+Include test2.txt
 Start
 NOReturn$Omw$Seriestl$(1+2).
 Omw$<=$!=$==$=$||.

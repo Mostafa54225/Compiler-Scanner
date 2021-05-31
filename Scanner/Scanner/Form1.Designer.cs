@@ -46,12 +46,14 @@ namespace Scanner
             this.label1 = new System.Windows.Forms.Label();
             this.noerrors = new System.Windows.Forms.Label();
             this.clearButton = new System.Windows.Forms.Button();
+            this.saveCodeButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.table)).BeginInit();
             this.SuspendLayout();
             // 
             // richTextBox1
             // 
             this.autocompleteMenu1.SetAutocompleteMenu(this.richTextBox1, this.autocompleteMenu1);
+            this.richTextBox1.ForeColor = System.Drawing.SystemColors.WindowText;
             this.richTextBox1.Location = new System.Drawing.Point(12, 61);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.Size = new System.Drawing.Size(1089, 603);
@@ -220,7 +222,7 @@ namespace Scanner
             // 
             // clearButton
             // 
-            this.clearButton.Location = new System.Drawing.Point(59, 694);
+            this.clearButton.Location = new System.Drawing.Point(333, 774);
             this.clearButton.Name = "clearButton";
             this.clearButton.Size = new System.Drawing.Size(409, 43);
             this.clearButton.TabIndex = 7;
@@ -228,11 +230,22 @@ namespace Scanner
             this.clearButton.UseVisualStyleBackColor = true;
             this.clearButton.Click += new System.EventHandler(this.clearButton_Click);
             // 
+            // saveCodeButton
+            // 
+            this.saveCodeButton.Location = new System.Drawing.Point(51, 694);
+            this.saveCodeButton.Name = "saveCodeButton";
+            this.saveCodeButton.Size = new System.Drawing.Size(409, 43);
+            this.saveCodeButton.TabIndex = 8;
+            this.saveCodeButton.Text = "Save Code";
+            this.saveCodeButton.UseVisualStyleBackColor = true;
+            this.saveCodeButton.Click += new System.EventHandler(this.saveCodeButton_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1801, 851);
+            this.Controls.Add(this.saveCodeButton);
             this.Controls.Add(this.clearButton);
             this.Controls.Add(this.noerrors);
             this.Controls.Add(this.label1);
@@ -266,6 +279,7 @@ namespace Scanner
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label noerrors;
         private System.Windows.Forms.Button clearButton;
+        private System.Windows.Forms.Button saveCodeButton;
     }
 }
 

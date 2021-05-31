@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "CStjrHmCujiLpGLeWx3sJE4yAts7cRQNze8yisTYiCJor3CN7HMysJFjqAFoSxeu740XnFg9kuRQFXBVDGkKtg==",
+  "dgSpecHash": "GECgihL+2oNhCUH3iurqsSlCwl+rr+LD9ISdyXhBml6m1Hci9q1Mk1nrrbC0ZekwqGBS0poV3enXHNQr3E2Crw==",
   "success": true,
-  "projectFilePath": "G:\\CS\\Level 3\\Second Semester\\Compiler Project\\Project\\Scanner\\Scanner\\Scanner.csproj",
+  "projectFilePath": "G:\\CS\\Level 3\\Second Semester\\Compiler\\Project\\Project\\Scanner\\Scanner\\Scanner.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mosta\\.nuget\\packages\\autocompletemenu-scintillanet\\1.6.2\\autocompletemenu-scintillanet.1.6.2.nupkg.sha512",
     "C:\\Users\\mosta\\.nuget\\packages\\jacobslusser.scintillanet\\3.6.3\\jacobslusser.scintillanet.3.6.3.nupkg.sha512"
