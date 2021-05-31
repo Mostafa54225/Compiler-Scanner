@@ -383,7 +383,12 @@ namespace Scanner
                 var text = _text.Substring(start, length);
                 if (text == "/^")
                 {
-                    while (Current != LF) Next();
+                    while (Current != LF) 
+                    { 
+                        Next();
+                        if (Current == '\0') break;
+                    }
+
                     return new SyntaxToken(SyntaxKind.Comment, start, text);
                 }
                 else
@@ -458,6 +463,7 @@ namespace Scanner
                             Next();
                             continue;
                         }
+                        if (Current == '\0') break;
                         filePath += Char.ToString(Current);
                         Next();
 
