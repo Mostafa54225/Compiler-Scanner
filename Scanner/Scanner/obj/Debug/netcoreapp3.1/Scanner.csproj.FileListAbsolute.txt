@@ -1,0 +1,72 @@
+G:\CS\Level 3\Second Semester\Compiler\Project\Scanner\Scanner\bin\Debug\netcoreapp3.1\Scanner.exe
+G:\CS\Level 3\Second Semester\Compiler\Project\Scanner\Scanner\bin\Debug\netcoreapp3.1\Scanner.deps.json
+G:\CS\Level 3\Second Semester\Compiler\Project\Scanner\Scanner\bin\Debug\netcoreapp3.1\Scanner.runtimeconfig.json
+G:\CS\Level 3\Second Semester\Compiler\Project\Scanner\Scanner\bin\Debug\netcoreapp3.1\Scanner.runtimeconfig.dev.json
+G:\CS\Level 3\Second Semester\Compiler\Project\Scanner\Scanner\bin\Debug\netcoreapp3.1\Scanner.dll
+G:\CS\Level 3\Second Semester\Compiler\Project\Scanner\Scanner\bin\Debug\netcoreapp3.1\Scanner.pdb
+G:\CS\Level 3\Second Semester\Compiler\Project\Scanner\Scanner\obj\Debug\netcoreapp3.1\Scanner.Form1.resources
+G:\CS\Level 3\Second Semester\Compiler\Project\Scanner\Scanner\obj\Debug\netcoreapp3.1\Scanner.csproj.GenerateResource.cache
+G:\CS\Level 3\Second Semester\Compiler\Project\Scanner\Scanner\obj\Debug\netcoreapp3.1\Scanner.AssemblyInfoInputs.cache
+G:\CS\Level 3\Second Semester\Compiler\Project\Scanner\Scanner\obj\Debug\netcoreapp3.1\Scanner.AssemblyInfo.cs
+G:\CS\Level 3\Second Semester\Compiler\Project\Scanner\Scanner\obj\Debug\netcoreapp3.1\Scanner.csproj.CoreCompileInputs.cache
+G:\CS\Level 3\Second Semester\Compiler\Project\Scanner\Scanner\obj\Debug\netcoreapp3.1\Scanner.dll
+G:\CS\Level 3\Second Semester\Compiler\Project\Scanner\Scanner\obj\Debug\netcoreapp3.1\Scanner.pdb
+G:\CS\Level 3\Second Semester\Compiler\Project\Scanner\Scanner\obj\Debug\netcoreapp3.1\Scanner.genruntimeconfig.cache
+G:\CS\Level 3\Second Semester\Compiler\Project\Scanner\Scanner\bin\Debug\netcoreapp3.1\AutocompleteMenu-ScintillaNET.dll
+G:\CS\Level 3\Second Semester\Compiler\Project\Scanner\Scanner\bin\Debug\netcoreapp3.1\ScintillaNET.dll
+G:\CS\Level 3\Second Semester\Compiler\Project\Scanner\Scanner\obj\Debug\netcoreapp3.1\Scanner.csproj.CopyComplete
+G:\CS\Level 3\Second Semester\Compiler\Project\Scanner\Scanner\obj\Debug\netcoreapp3.1\Scanner.csprojAssemblyReference.cache
+C:\Users\youss\Desktop\Compiler-Scanner-main\Compiler-Scanner-master\Scanner\Scanner\bin\Debug\netcoreapp3.1\Scanner.exe
+C:\Users\youss\Desktop\Compiler-Scanner-main\Compiler-Scanner-master\Scanner\Scanner\bin\Debug\netcoreapp3.1\Scanner.deps.json
+C:\Users\youss\Desktop\Compiler-Scanner-main\Compiler-Scanner-master\Scanner\Scanner\bin\Debug\netcoreapp3.1\Scanner.runtimeconfig.json
+C:\Users\youss\Desktop\Compiler-Scanner-main\Compiler-Scanner-master\Scanner\Scanner\bin\Debug\netcoreapp3.1\Scanner.runtimeconfig.dev.json
+C:\Users\youss\Desktop\Compiler-Scanner-main\Compiler-Scanner-master\Scanner\Scanner\bin\Debug\netcoreapp3.1\Scanner.dll
+C:\Users\youss\Desktop\Compiler-Scanner-main\Compiler-Scanner-master\Scanner\Scanner\bin\Debug\netcoreapp3.1\Scanner.pdb
+C:\Users\youss\Desktop\Compiler-Scanner-main\Compiler-Scanner-master\Scanner\Scanner\bin\Debug\netcoreapp3.1\AutocompleteMenu-ScintillaNET.dll
+C:\Users\youss\Desktop\Compiler-Scanner-main\Compiler-Scanner-master\Scanner\Scanner\bin\Debug\netcoreapp3.1\ScintillaNET.dll
+C:\Users\youss\Desktop\Compiler-Scanner-main\Compiler-Scanner-master\Scanner\Scanner\obj\Debug\netcoreapp3.1\Scanner.csproj.AssemblyReference.cache
+C:\Users\youss\Desktop\Compiler-Scanner-main\Compiler-Scanner-master\Scanner\Scanner\obj\Debug\netcoreapp3.1\Scanner.Form1.resources
+C:\Users\youss\Desktop\Compiler-Scanner-main\Compiler-Scanner-master\Scanner\Scanner\obj\Debug\netcoreapp3.1\Scanner.csproj.GenerateResource.cache
+C:\Users\youss\Desktop\Compiler-Scanner-main\Compiler-Scanner-master\Scanner\Scanner\obj\Debug\netcoreapp3.1\Scanner.AssemblyInfoInputs.cache
+C:\Users\youss\Desktop\Compiler-Scanner-main\Compiler-Scanner-master\Scanner\Scanner\obj\Debug\netcoreapp3.1\Scanner.AssemblyInfo.cs
+C:\Users\youss\Desktop\Compiler-Scanner-main\Compiler-Scanner-master\Scanner\Scanner\obj\Debug\netcoreapp3.1\Scanner.csproj.CoreCompileInputs.cache
+C:\Users\youss\Desktop\Compiler-Scanner-main\Compiler-Scanner-master\Scanner\Scanner\obj\Debug\netcoreapp3.1\Scanner.csproj.CopyComplete
+C:\Users\youss\Desktop\Compiler-Scanner-main\Compiler-Scanner-master\Scanner\Scanner\obj\Debug\netcoreapp3.1\Scanner.dll
+C:\Users\youss\Desktop\Compiler-Scanner-main\Compiler-Scanner-master\Scanner\Scanner\obj\Debug\netcoreapp3.1\Scanner.pdb
+C:\Users\youss\Desktop\Compiler-Scanner-main\Compiler-Scanner-master\Scanner\Scanner\obj\Debug\netcoreapp3.1\Scanner.genruntimeconfig.cache
+C:\Users\mosta\OneDrive\Desktop\Compiler-Scanner-main\Compiler-Scanner-master\Scanner\Scanner\bin\Debug\netcoreapp3.1\Scanner.exe
+C:\Users\mosta\OneDrive\Desktop\Compiler-Scanner-main\Compiler-Scanner-master\Scanner\Scanner\bin\Debug\netcoreapp3.1\Scanner.deps.json
+C:\Users\mosta\OneDrive\Desktop\Compiler-Scanner-main\Compiler-Scanner-master\Scanner\Scanner\bin\Debug\netcoreapp3.1\Scanner.runtimeconfig.json
+C:\Users\mosta\OneDrive\Desktop\Compiler-Scanner-main\Compiler-Scanner-master\Scanner\Scanner\bin\Debug\netcoreapp3.1\Scanner.runtimeconfig.dev.json
+C:\Users\mosta\OneDrive\Desktop\Compiler-Scanner-main\Compiler-Scanner-master\Scanner\Scanner\bin\Debug\netcoreapp3.1\Scanner.dll
+C:\Users\mosta\OneDrive\Desktop\Compiler-Scanner-main\Compiler-Scanner-master\Scanner\Scanner\bin\Debug\netcoreapp3.1\Scanner.pdb
+C:\Users\mosta\OneDrive\Desktop\Compiler-Scanner-main\Compiler-Scanner-master\Scanner\Scanner\bin\Debug\netcoreapp3.1\AutocompleteMenu-ScintillaNET.dll
+C:\Users\mosta\OneDrive\Desktop\Compiler-Scanner-main\Compiler-Scanner-master\Scanner\Scanner\bin\Debug\netcoreapp3.1\ScintillaNET.dll
+C:\Users\mosta\OneDrive\Desktop\Compiler-Scanner-main\Compiler-Scanner-master\Scanner\Scanner\obj\Debug\netcoreapp3.1\Scanner.csprojAssemblyReference.cache
+C:\Users\mosta\OneDrive\Desktop\Compiler-Scanner-main\Compiler-Scanner-master\Scanner\Scanner\obj\Debug\netcoreapp3.1\Scanner.Form1.resources
+C:\Users\mosta\OneDrive\Desktop\Compiler-Scanner-main\Compiler-Scanner-master\Scanner\Scanner\obj\Debug\netcoreapp3.1\Scanner.csproj.GenerateResource.cache
+C:\Users\mosta\OneDrive\Desktop\Compiler-Scanner-main\Compiler-Scanner-master\Scanner\Scanner\obj\Debug\netcoreapp3.1\Scanner.AssemblyInfoInputs.cache
+C:\Users\mosta\OneDrive\Desktop\Compiler-Scanner-main\Compiler-Scanner-master\Scanner\Scanner\obj\Debug\netcoreapp3.1\Scanner.AssemblyInfo.cs
+C:\Users\mosta\OneDrive\Desktop\Compiler-Scanner-main\Compiler-Scanner-master\Scanner\Scanner\obj\Debug\netcoreapp3.1\Scanner.csproj.CoreCompileInputs.cache
+C:\Users\mosta\OneDrive\Desktop\Compiler-Scanner-main\Compiler-Scanner-master\Scanner\Scanner\obj\Debug\netcoreapp3.1\Scanner.csproj.CopyComplete
+C:\Users\mosta\OneDrive\Desktop\Compiler-Scanner-main\Compiler-Scanner-master\Scanner\Scanner\obj\Debug\netcoreapp3.1\Scanner.dll
+C:\Users\mosta\OneDrive\Desktop\Compiler-Scanner-main\Compiler-Scanner-master\Scanner\Scanner\obj\Debug\netcoreapp3.1\Scanner.pdb
+C:\Users\mosta\OneDrive\Desktop\Compiler-Scanner-main\Compiler-Scanner-master\Scanner\Scanner\obj\Debug\netcoreapp3.1\Scanner.genruntimeconfig.cache
+G:\CS\Level 3\Second Semester\Compiler\Project\Project\Scanner\Scanner\bin\Debug\netcoreapp3.1\Scanner.exe
+G:\CS\Level 3\Second Semester\Compiler\Project\Project\Scanner\Scanner\bin\Debug\netcoreapp3.1\Scanner.deps.json
+G:\CS\Level 3\Second Semester\Compiler\Project\Project\Scanner\Scanner\bin\Debug\netcoreapp3.1\Scanner.runtimeconfig.json
+G:\CS\Level 3\Second Semester\Compiler\Project\Project\Scanner\Scanner\bin\Debug\netcoreapp3.1\Scanner.runtimeconfig.dev.json
+G:\CS\Level 3\Second Semester\Compiler\Project\Project\Scanner\Scanner\bin\Debug\netcoreapp3.1\Scanner.dll
+G:\CS\Level 3\Second Semester\Compiler\Project\Project\Scanner\Scanner\bin\Debug\netcoreapp3.1\Scanner.pdb
+G:\CS\Level 3\Second Semester\Compiler\Project\Project\Scanner\Scanner\bin\Debug\netcoreapp3.1\AutocompleteMenu-ScintillaNET.dll
+G:\CS\Level 3\Second Semester\Compiler\Project\Project\Scanner\Scanner\bin\Debug\netcoreapp3.1\ScintillaNET.dll
+G:\CS\Level 3\Second Semester\Compiler\Project\Project\Scanner\Scanner\obj\Debug\netcoreapp3.1\Scanner.csprojAssemblyReference.cache
+G:\CS\Level 3\Second Semester\Compiler\Project\Project\Scanner\Scanner\obj\Debug\netcoreapp3.1\Scanner.Form1.resources
+G:\CS\Level 3\Second Semester\Compiler\Project\Project\Scanner\Scanner\obj\Debug\netcoreapp3.1\Scanner.csproj.GenerateResource.cache
+G:\CS\Level 3\Second Semester\Compiler\Project\Project\Scanner\Scanner\obj\Debug\netcoreapp3.1\Scanner.AssemblyInfoInputs.cache
+G:\CS\Level 3\Second Semester\Compiler\Project\Project\Scanner\Scanner\obj\Debug\netcoreapp3.1\Scanner.AssemblyInfo.cs
+G:\CS\Level 3\Second Semester\Compiler\Project\Project\Scanner\Scanner\obj\Debug\netcoreapp3.1\Scanner.csproj.CoreCompileInputs.cache
+G:\CS\Level 3\Second Semester\Compiler\Project\Project\Scanner\Scanner\obj\Debug\netcoreapp3.1\Scanner.csproj.CopyComplete
+G:\CS\Level 3\Second Semester\Compiler\Project\Project\Scanner\Scanner\obj\Debug\netcoreapp3.1\Scanner.dll
+G:\CS\Level 3\Second Semester\Compiler\Project\Project\Scanner\Scanner\obj\Debug\netcoreapp3.1\Scanner.pdb
+G:\CS\Level 3\Second Semester\Compiler\Project\Project\Scanner\Scanner\obj\Debug\netcoreapp3.1\Scanner.genruntimeconfig.cache

@@ -1,0 +1,46 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "AutoCompleteMenu-ScintillaNET/1.6.2": {
+        "dependencies": {
+          "jacobslusser.ScintillaNET": "3.6.3"
+        },
+        "runtime": {
+          "lib/net461/AutocompleteMenu-ScintillaNET.dll": {
+            "assemblyVersion": "1.6.2.0",
+            "fileVersion": "1.6.2.0"
+          }
+        }
+      },
+      "jacobslusser.ScintillaNET/3.6.3": {
+        "runtime": {
+          "lib/net40/ScintillaNET.dll": {
+            "assemblyVersion": "3.6.3.0",
+            "fileVersion": "3.6.3.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "AutoCompleteMenu-ScintillaNET/1.6.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-bCGtFKqaMvj2Sma3Kr09N8NhLVxICOJxiBuG55/GDhSffP8WAtWi5D4IGFldcQfK7IcbuXsjN1/Mjy3ImjYStQ==",
+      "path": "autocompletemenu-scintillanet/1.6.2",
+      "hashPath": "autocompletemenu-scintillanet.1.6.2.nupkg.sha512"
+    },
+    "jacobslusser.ScintillaNET/3.6.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-lERpP3K4x1ge5sW5eG+Yhv9sEFF4MDiHd/nuXTu/xSgPGODQo7K8hCEivqulrFypzFPZ+TsLDZoqucmi5blbdg==",
+      "path": "jacobslusser.scintillanet/3.6.3",
+      "hashPath": "jacobslusser.scintillanet.3.6.3.nupkg.sha512"
+    }
+  }
+}
