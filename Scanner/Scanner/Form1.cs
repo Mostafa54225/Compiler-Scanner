@@ -13,8 +13,10 @@ namespace Scanner
         {
             InitializeComponent();
         }
+        
+
         public string code;
-        public int LineNumber = 1;
+        public static int LineNumber = 1;
         public int NoOfLexeme = 1;
 
         public int LineNumberInclude = 1;
@@ -410,10 +412,11 @@ namespace Scanner
                 var text = _text.Substring(start, length);
                 if (text == "/@")
                 {
-                    while(Char.ToString(Current) != "@")
+                    
+                    while (Char.ToString(Current) != "@")
                     {
                         Next();
-                        
+                        if (Current == LF) Form1.LineNumber++;
                         if (Current == '\0') break;
                     }
                     Next();
