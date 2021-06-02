@@ -47,6 +47,7 @@ namespace Scanner
             this.noerrors = new System.Windows.Forms.Label();
             this.clearButton = new System.Windows.Forms.Button();
             this.saveCodeButton = new System.Windows.Forms.Button();
+            this.saveOutputButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.table)).BeginInit();
             this.SuspendLayout();
             // 
@@ -240,11 +241,22 @@ namespace Scanner
             this.saveCodeButton.UseVisualStyleBackColor = true;
             this.saveCodeButton.Click += new System.EventHandler(this.saveCodeButton_Click);
             // 
+            // saveOutputButton
+            // 
+            this.saveOutputButton.Location = new System.Drawing.Point(1229, 796);
+            this.saveOutputButton.Name = "saveOutputButton";
+            this.saveOutputButton.Size = new System.Drawing.Size(409, 43);
+            this.saveOutputButton.TabIndex = 9;
+            this.saveOutputButton.Text = "Save Code";
+            this.saveOutputButton.UseVisualStyleBackColor = true;
+            this.saveOutputButton.Click += new System.EventHandler(this.saveOutputButton_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1801, 851);
+            this.Controls.Add(this.saveOutputButton);
             this.Controls.Add(this.saveCodeButton);
             this.Controls.Add(this.clearButton);
             this.Controls.Add(this.noerrors);
@@ -280,6 +292,7 @@ namespace Scanner
         private System.Windows.Forms.Label noerrors;
         private System.Windows.Forms.Button clearButton;
         private System.Windows.Forms.Button saveCodeButton;
+        private System.Windows.Forms.Button saveOutputButton;
     }
 }
 

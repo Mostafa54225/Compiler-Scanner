@@ -17,15 +17,14 @@ namespace Scanner
 
         public string code;
         public static int LineNumber = 1;
-        public int NoOfLexeme = 0;
+        public int NoOfLexeme = 1;
        
-       // general path 
-        string path = @"H:\damnit.txt";
-       // a string to load lines into external file
-        public string line;
-        
+
+       
+        public string line;  // a string to load lines into external file
+
         public int LineNumberInclude = 1;
-        public int NoOfLexemeInclude = 0;
+        public int NoOfLexemeInclude = 1;
         public int NoOfErrors = 0;
         public string match = "";
         
@@ -68,13 +67,11 @@ namespace Scanner
                 else match = "Matched";
 
                 if (token.Kind == SyntaxKind.EndOfFileToken) break;
-                
+
                 //save output in external file
 
-                line += $"{token.Kind}: '{token.Text}' #Lexeme No: {NoOfLexeme++} in Line Number: {LineNumber}  matchability: {match}";
-                line += Environment.NewLine;
-                File.WriteAllText(path, line);
-                
+                saveOutputFromTable(token);
+
                 //end of save output
 
                 table.Rows.Add(LineNumber, token.Text, token.Kind, NoOfLexeme++, match);
@@ -122,15 +119,10 @@ namespace Scanner
                     richTextBox1.SelectionBackColor = Color.Yellow;
                 }
                 else match = "Matched";
-               
-               //save output in external file
 
-                line += $"{token.Kind}: '{token.Text}' #Lexeme No: {NoOfLexeme++} in Line Number: {LineNumber}  matchability: {match}";
-                line += Environment.NewLine;
-                File.WriteAllText(path, line);
-                
-                //end of save output
-                
+                saveOutputFromTable(token);
+
+
                 table.Rows.Add(LineNumber, token.Text, token.Kind, NoOfLexeme++, match);
             }
             noerrors.Text += NoOfErrors;
@@ -181,6 +173,7 @@ namespace Scanner
                     break; 
                 }
 
+                saveOutputFromTable(tokenInclude);
 
                 table.Rows.Add(LineNumberInclude, tokenInclude.Text, tokenInclude.Kind, NoOfLexemeInclude++, match);
                 
@@ -210,7 +203,7 @@ namespace Scanner
         {
             if (removeTextFromEditor)
                 richTextBox1.Text = "";
-            
+            line = null;
             table.Rows.Clear();
 
             LineNumber = 1;
@@ -256,12 +249,36 @@ namespace Scanner
                     sw.WriteLine(code);
             }
         }
+
+        private void saveOutputFromTable(SyntaxToken token)
+        {
+
+            line += $"{token.Kind}: '{token.Text}' #Lexeme No: {NoOfLexeme} in Line Number: {LineNumber}  matchability: {match}";
+            line += Environment.NewLine;
+        }
+
+
         private void messageBoxShow(string text, string title, MessageBoxButtons messageBoxButtons, MessageBoxIcon messageIcon)
         {
             MessageBox.Show(text, title, messageBoxButtons, messageIcon);
         }
 
-        
+        private void saveOutputButton_Click(object sender, EventArgs e)
+        {
+            if(line == null)
+            {
+                messageBoxShow("There is no output to save", "Output is empty", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            SaveFileDialog saveFile = new SaveFileDialog();
+            saveFile.RestoreDirectory = true;
+
+            if (saveFile.ShowDialog() == DialogResult.OK)
+            {
+                using (System.IO.StreamWriter sw = new System.IO.StreamWriter(saveFile.FileName))
+                    sw.WriteLine(line);
+            }
+        }
     }
 
     enum SyntaxKind
