@@ -247,7 +247,7 @@ namespace Scanner
             this.saveOutputButton.Name = "saveOutputButton";
             this.saveOutputButton.Size = new System.Drawing.Size(409, 43);
             this.saveOutputButton.TabIndex = 9;
-            this.saveOutputButton.Text = "Save Code";
+            this.saveOutputButton.Text = "Save Output";
             this.saveOutputButton.UseVisualStyleBackColor = true;
             this.saveOutputButton.Click += new System.EventHandler(this.saveOutputButton_Click);
             // 
