@@ -984,7 +984,7 @@ namespace Scanner
 
         private static bool isDigit(char text)
         {
-            Regex regex = new Regex(@"^\d$");
+            Regex regex = new Regex(@"([0-9]*[.])?[0-9]+");
             string test = Char.ToString(text);
             if (regex.IsMatch(test)) return true;
             return false;
