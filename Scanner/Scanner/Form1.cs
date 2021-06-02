@@ -213,7 +213,7 @@ namespace Scanner
             }
             SaveFileDialog saveFile = new SaveFileDialog();
             saveFile.RestoreDirectory = true;
-            saveFile.InitialDirectory = @"G:\CS\Level 3\Second Semester\Compiler\Project\Project";
+            //saveFile.InitialDirectory = @"G:\CS\Level 3\Second Semester\Compiler\Project\Project";
             //saveFile.FileName = String.Format("{0}.txt", code);
             saveFile.DefaultExt = "*.txt*";
             if(saveFile.ShowDialog() == DialogResult.OK)
