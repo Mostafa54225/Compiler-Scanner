@@ -1,0 +1,2 @@
+Include test4.txt
+Omw$(1+2)

@@ -1,1 +1,2 @@
+Include test3.txt
 Omw hireg3.

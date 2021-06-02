@@ -152,10 +152,18 @@ namespace Scanner
                 }
                 else match = "Matched";
 
-                if (tokenInclude.Kind == SyntaxKind.EndOfFileToken) break;
+                if (tokenInclude.Kind == SyntaxKind.EndOfFileToken) 
+                {
+                    LineNumber = 1;
+                    LineNumberInclude = 1;
+                    NoOfLexeme = 1;
+                    NoOfLexemeInclude = 1;
+                    break; 
+                }
 
 
                 table.Rows.Add(LineNumberInclude, tokenInclude.Text, tokenInclude.Kind, NoOfLexemeInclude++, match);
+                
             }
 
         }
@@ -196,7 +204,13 @@ namespace Scanner
         }
         private void saveCodeButton_Click(object sender, EventArgs e)
         {
-            if (richTextBox1.Text == "") 
+            saveCode();
+        }
+
+
+        private void saveCode() 
+        {
+            if (richTextBox1.Text == "")
             {
                 messageBoxShow("You should write in the editor to be able to save", "Editor is empty", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
@@ -206,17 +220,17 @@ namespace Scanner
                 messageBoxShow("You should Compile the code first", "Compilation Required", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
-            if(NoOfErrors > 0)
+            if (NoOfErrors > 0)
             {
                 messageBoxShow("Remove the errors to be able to save the code", "Erorrs in Code", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
             SaveFileDialog saveFile = new SaveFileDialog();
             saveFile.RestoreDirectory = true;
-            saveFile.InitialDirectory = @"G:\CS\Level 3\Second Semester\Compiler\Project\Project";
+            //saveFile.InitialDirectory = @"G:\CS\Level 3\Second Semester\Compiler\Project\Project";
             //saveFile.FileName = String.Format("{0}.txt", code);
             saveFile.DefaultExt = "*.txt*";
-            if(saveFile.ShowDialog() == DialogResult.OK)
+            if (saveFile.ShowDialog() == DialogResult.OK)
             {
                 using (System.IO.StreamWriter sw = new System.IO.StreamWriter(saveFile.FileName))
                     sw.WriteLine(code);
@@ -226,6 +240,8 @@ namespace Scanner
         {
             MessageBox.Show(text, title, messageBoxButtons, messageIcon);
         }
+
+        
     }
 
     enum SyntaxKind
@@ -334,7 +350,6 @@ namespace Scanner
                 while (isWhiteSpace(Current))
                     Next();
 
-                var length = _position - start;
                 var text = subString(_text, start, _position);
                 //int.TryParse(text, out var value);
                 return new SyntaxToken(SyntaxKind.WhiteSpaceToken, start, text);
@@ -365,7 +380,7 @@ namespace Scanner
 
                 }
 
-                var length = _position - start;
+                
                 var text = subString(_text, start, _position);
                 //int.TryParse(text, out var value);
                 return new SyntaxToken(SyntaxKind.Constant, start, text);
@@ -381,7 +396,7 @@ namespace Scanner
                     Next();
                     i++;
                 }
-                var length = _position - start;
+                
                 var text = subString(_text, start, _position);
                 if (text == "/^")
                 {
@@ -408,7 +423,7 @@ namespace Scanner
                     Next();
                     i++;
                 }
-                var length = _position - start;
+                
                 var text = subString(_text, start, _position);
                 if (text == "/@")
                 {
@@ -454,7 +469,6 @@ namespace Scanner
                     Next();
                     i++;
                 }
-                var length = _position - start;
                 var text = subString(_text, start, _position);
                 if (text == "Include")
                 {
@@ -471,6 +485,7 @@ namespace Scanner
                         Next();
 
                     }
+                    filePath = Regex.Replace(filePath, @"\s", "");
                     return new SyntaxToken(SyntaxKind.Inclusion, start, filePath);
                 }
                 else
@@ -490,7 +505,7 @@ namespace Scanner
                     Next();
                     i++;
                 }
-                var length = _position - start;
+
                 var text = subString(_text, start, _position);
                 if (text == "Yesif-Otherwise")
                     return new SyntaxToken(SyntaxKind.Condition, start, text);
@@ -509,7 +524,7 @@ namespace Scanner
                     Next();
                     i++;
                 }
-                var length = _position - start;
+                //var length = _position - start;
                 var text = subString(_text, start, _position);
                 if (text == "Omw")
                     return new SyntaxToken(SyntaxKind.Integer, start, text);
@@ -528,7 +543,7 @@ namespace Scanner
                     Next();
                     i++;
                 }
-                var length = _position - start;
+
                 var text = subString(_text, start, _position);
                 if (text == "SIMww")
                     return new SyntaxToken(SyntaxKind.SInteger, start, text);
@@ -547,7 +562,7 @@ namespace Scanner
                     Next();
                     i++;
                 }
-                var length = _position - start;
+                
                 var text = subString(_text, start, _position);
                 if (text == "Chji")
                     return new SyntaxToken(SyntaxKind.Character, start, text);
@@ -567,7 +582,7 @@ namespace Scanner
                     i++;
                 }
 
-                var length = _position - start;
+                
                 var text = subString(_text, start, _position);
                 if (text == "Seriestl")
                     return new SyntaxToken(SyntaxKind.String, start, text);
@@ -588,7 +603,6 @@ namespace Scanner
                     i++;
                 }
 
-                var length = _position - start;
                 var text = subString(_text, start, _position);
                 if (text == "IMwf")
                     return new SyntaxToken(SyntaxKind.Float, start, text);
@@ -609,7 +623,7 @@ namespace Scanner
                     Next();
                     i++;
                 }
-                var length = _position - start;
+
                 var text = subString(_text, start, _position);
                 if (text == "SIMwf")
                     return new SyntaxToken(SyntaxKind.SFloat, start, text);
@@ -629,7 +643,7 @@ namespace Scanner
                     Next();
                     i++;
                 }
-                var length = _position - start;
+                
                 var text = subString(_text, start, _position);
                 if (text == "NOReturn")
                     return new SyntaxToken(SyntaxKind.Void, start, text);
@@ -649,7 +663,7 @@ namespace Scanner
                     Next();
                     i++;
                 }
-                var length = _position - start;
+                
                 var text = subString(_text, start, _position);
                 if (text == "RepeatWhen")
                     return new SyntaxToken(SyntaxKind.Loop, start, text);
@@ -669,7 +683,7 @@ namespace Scanner
                     Next();
                     i++;
                 }
-                var length = _position - start;
+                
                 var text = subString(_text, start, _position);
                 if (text == "Reiterate")
                     return new SyntaxToken(SyntaxKind.Loop, start, text);
@@ -689,7 +703,7 @@ namespace Scanner
                     Next();
                     i++;
                 }
-                var length = _position - start;
+                
                 var text = subString(_text, start, _position);
                 if (text == "GetBack")
                     return new SyntaxToken(SyntaxKind.Return, start, text);
@@ -709,7 +723,7 @@ namespace Scanner
                     Next();
                     i++;
                 }
-                var length = _position - start;
+                
                 var text = subString(_text, start, _position);
                 if (text == "OutLoop")
                     return new SyntaxToken(SyntaxKind.Break, start, text);
@@ -729,7 +743,7 @@ namespace Scanner
                     Next();
                     i++;
                 }
-                var length = _position - start;
+                
                 var text = subString(_text, start, _position);
                 if (text == "Loli")
                     return new SyntaxToken(SyntaxKind.Struct, start, text);
@@ -749,7 +763,7 @@ namespace Scanner
                     Next();
                     i++;
                 }
-                var length = _position - start;
+                
                 var text = subString(_text, start, _position);
                 if (text == "&&")
                     return new SyntaxToken(SyntaxKind.LogicOperators, start, text);
@@ -769,7 +783,7 @@ namespace Scanner
                     Next();
                     i++;
                 }
-                var length = _position - start;
+                
                 var text = subString(_text, start, _position);
                 if (text == "||")
                     return new SyntaxToken(SyntaxKind.LogicOperators, start, text);
@@ -789,7 +803,7 @@ namespace Scanner
                     Next();
                     i++;
                 }
-                var length = _position - start;
+                
                 var text = subString(_text, start, _position);
                 if (text == "->")
                     return new SyntaxToken(SyntaxKind.AccessOperator, start, text);
@@ -809,7 +823,7 @@ namespace Scanner
                     Next();
                     i++;
                 }
-                var length = _position - start;
+                
                 var text = subString(_text, start, _position);
                 if (text == "Start")
                     return new SyntaxToken(SyntaxKind.Start, start, text);
@@ -829,7 +843,7 @@ namespace Scanner
                     Next();
                     i++;
                 }
-                var length = _position - start;
+                
                 var text = subString(_text, start, _position);
                 if (text == "Last")
                     return new SyntaxToken(SyntaxKind.End, start, text);
@@ -903,7 +917,7 @@ namespace Scanner
                 while (isidentifier(Char.ToString(Current)) || isDigit(Current))
                     Next();
 
-                var length = _position - start;
+                
                 var text = subString(_text, start, _position);
 
                 return new SyntaxToken(SyntaxKind.IDENTIFIER, start, text);

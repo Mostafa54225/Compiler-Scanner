@@ -63,7 +63,7 @@ namespace Scanner
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(359, 12);
+            this.button1.Location = new System.Drawing.Point(43, 12);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(409, 43);
             this.button1.TabIndex = 1;
@@ -73,7 +73,7 @@ namespace Scanner
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(648, 694);
+            this.button2.Location = new System.Drawing.Point(641, 8);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(409, 43);
             this.button2.TabIndex = 2;
@@ -222,7 +222,7 @@ namespace Scanner
             // 
             // clearButton
             // 
-            this.clearButton.Location = new System.Drawing.Point(333, 774);
+            this.clearButton.Location = new System.Drawing.Point(43, 698);
             this.clearButton.Name = "clearButton";
             this.clearButton.Size = new System.Drawing.Size(409, 43);
             this.clearButton.TabIndex = 7;
@@ -232,7 +232,7 @@ namespace Scanner
             // 
             // saveCodeButton
             // 
-            this.saveCodeButton.Location = new System.Drawing.Point(51, 694);
+            this.saveCodeButton.Location = new System.Drawing.Point(641, 698);
             this.saveCodeButton.Name = "saveCodeButton";
             this.saveCodeButton.Size = new System.Drawing.Size(409, 43);
             this.saveCodeButton.TabIndex = 8;
