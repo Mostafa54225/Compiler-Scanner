@@ -344,7 +344,7 @@ namespace Scanner
         {
             get
             {
-                if (_position >= _text.Length)
+                if (_position >= lengthOfString(_text))
                     return '\0';
                 return _text[_position];
             }
@@ -358,7 +358,7 @@ namespace Scanner
         {
 
             int i = 0;
-            if (_position >= _text.Length)
+            if (_position >= lengthOfString(_text))
             {
                 return new SyntaxToken(SyntaxKind.EndOfFileToken, _position, "\0");
             }
@@ -971,7 +971,12 @@ namespace Scanner
             return new SyntaxToken(SyntaxKind.BadToken, _position++, subString(_text, _position - 1, _position));
         }
 
-
+        private static int lengthOfString(string text)
+        {
+            int counter = 0;
+            foreach (char c in text) counter++;
+            return counter;
+        }
         private static string subString(string text, int startIndex, int length)
         {
             string word = "";
@@ -1032,7 +1037,7 @@ namespace Scanner
         private static bool isKeyWord(char character, int location, string word)
         {
             string str = word;
-            if (location < str.Length && character == str[location]) return true;
+            if (location < lengthOfString(str) && character == str[location]) return true;
             return false;
         }
 
